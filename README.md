@@ -2,7 +2,10 @@
 
 ## 操作引导
 
-`git clone git@github.com:gitsshylalala/mykdc.git`
+首先执行命令
+```
+git clone git@github.com:gitsshylalala/mykdc.git
+```
 克隆完成后
 ```
 cd mykdc
@@ -18,12 +21,12 @@ make
 
 ## 项目介绍
 
-本项目为基于C++的对称密钥分发平台客户端程序
-目的是以客户端程序、函数接口的形式安全分发和保存用户对称密钥。
-还有一个目的是完成鄙人的毕业设计。
-同时用到开源有rapidjson、glog。还有我从脚本之家找的DES算法代码.
+本项目为基于C++的对称密钥分发平台客户端程序<br>
+目的是以客户端程序、函数接口的形式安全分发和保存用户对称密钥。<br>
+还有一个目的是完成鄙人的毕业设计。<br>
+同时用到开源有rapidjson、glog。还有我从脚本之家找的DES算法代码。<br>
 
-[rapidjson文档](http://rapidjson.org/zh-cn/) </br>
+[rapidjson文档](http://rapidjson.org/zh-cn/)
 
 [glog于git上代码](https://github.com/google/glog) </br>
 
