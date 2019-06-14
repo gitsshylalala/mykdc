@@ -1,4 +1,5 @@
-**#README1.0**
+#**README1.0**
+
 ###操作引导
 `git clone git@github.com:gitsshylalala/mykdc.git`
 克隆完成后
