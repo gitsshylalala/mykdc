@@ -6,6 +6,12 @@
 cd mykdc
 make
 ```
+目录介绍：
+1. ./lib/  表示静态库目录，如果要以-lkdcapi方式使用，执行命令
+    `cp ./lib/*.a /usr/lib`
+2. ./item/ 目标文件集合。
+3. ./include/ 头文件集合。
+
 ---
 ###项目介绍
 本项目为基于C++的对称密钥分发平台客户端程序
@@ -20,7 +26,7 @@ make
 ###使用方式
 执行命令make后可以看到两个可执行程序。
 其中client为客户端进程，可以执行程序以操作。
-KdcApi_example为示例程序，详细代码在example下。
+KdcApi_example为示例程序，详细代码在./example/下。
 
 ---
 ###注意事项
