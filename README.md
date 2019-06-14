@@ -1,4 +1,4 @@
-# **README1.1.0**
+# **README1.1.8**
 ## 操作引导
 首先执行命令
 ```
@@ -10,10 +10,12 @@ cd mykdc
 make
 ```
 目录介绍：
-1. ./lib/  表示静态库目录，如果要以-lkdcapi方式使用，执行命令
-    `cp ./lib/*.a /usr/lib`
+1. ./lib/  表示静态库目录，如果要以-lkdcapi方式使用于其他地方，执行命令
+    ```
+    cp ./lib/*.so /lib64/
+    ```
 2. ./item/ 目标文件集合。
-3. ./include/ 头文件集合。
+3. ./inc/ 头文件集合。
 ---
 ## 项目介绍
 
@@ -31,12 +33,13 @@ make
 
 执行命令make后可以看到两个可执行程序。<br>
 其中client为客户端进程，可以执行程序以操作。<br>
-KdcApi_example为示例程序，详细代码在./example/下。
+test_kdcapi为示例程序，详细代码在./example/下。
 
 ---
 ## 注意事项
 1. 不要自己修改配置文件。
 2. 调用KDCAPI对象的加密手段是，底层对In的字符串进行了两次In.size()的内存开辟。<br>
    如果输入数据块In过大建议自己攥写DES算法实现而非调用接口。
-3. 有问题麻烦发给邮箱shihongyuhaha@outlook.com，感激不尽。
+3. 动态库要注意编译时和执行时都需要，所以要么临时修改LD_LIBRARY_PATH，要么整体修改/etc/ld.so.conf并执行ldconfig
+4. 有问题麻烦发给邮箱shihongyuhaha@outlook.com，感激不尽。
 
