@@ -1,4 +1,4 @@
-# **README1.1.8**
+# **README1.2.0**
 ## 操作引导
 首先执行命令
 ```
@@ -41,5 +41,6 @@ test_kdcapi为示例程序，详细代码在./example/下。
 2. 调用KDCAPI对象的加密手段是，底层对In的字符串进行了两次In.size()的内存开辟。<br>
    如果输入数据块In过大建议自己攥写DES算法实现而非调用接口。
 3. 动态库要注意编译时和执行时都需要，所以要么临时修改LD_LIBRARY_PATH，要么整体修改/etc/ld.so.conf并执行ldconfig
-4. 有问题麻烦发给邮箱shihongyuhaha@outlook.com，感激不尽。
+4. 测试过程中证明g++版本不宜过高或过低，4.8左右g++最好。
+5. 有问题麻烦发给邮箱shihongyuhaha@outlook.com，感激不尽。
 
