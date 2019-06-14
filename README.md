@@ -21,10 +21,10 @@ make
 本项目为基于C++的对称密钥分发平台客户端程序
 目的是以客户端程序、函数接口的形式安全分发和保存用户对称密钥。
 还有一个目的是完成鄙人的毕业设计。
-同时用到开源有rapidjson、glog。还有我从脚本之家找的DES算法代码。
-[rapidjson文档](http://rapidjson.org/zh-cn/)
-[glog于git上代码](https://github.com/google/glog)
-[脚本之家DES算法](https://www.jb51.net/article/98430.htm)
+同时用到开源有rapidjson、glog。还有我从脚本之家找的DES算法代码。 </br>
+[rapidjson文档](http://rapidjson.org/zh-cn/) </br>
+[glog于git上代码](https://github.com/google/glog) </br>
+[脚本之家DES算法](https://www.jb51.net/article/98430.htm) </br>
 
 ---
 
